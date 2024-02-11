@@ -39,7 +39,7 @@ function createCard (id, topic, url, imgSrc){
   return cardElement;
 }
 function createIconOnClickEvent(){
-  const icons = document.querySelectorAll('i');
+  const icons = document.querySelectorAll('.card i');
   icons.forEach(icon =>{
     icon.addEventListener('click', e =>{
       const  target = e.target;
@@ -62,14 +62,9 @@ function createIconOnClickEvent(){
 async function populateCardContainer(){
   const data = await getDataFromApi(APIUrl).then(data=>data);
   data.results.forEach(result => {
-    console.log(result);
     const newCard = createCard(result.id, result.title, result.url, result.image_url);
     unFavCardContainer.appendChild(newCard);
   });
   createIconOnClickEvent();
 }
-
 populateCardContainer();
-console.log('done');
-// const newCard = createCard(topic, newsUrl, imageSrc);
-// cardContainer.appendChild(newCard);

@@ -1,22 +1,29 @@
 body{
-  text-align: center; */
+  text-align: center;
 }
-.main-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-left: auto;
 
+.btn-container{
+  margin-bottom: 1rem;
 }
+
+.btn-container span{
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+section{
+  max-width: 80vw;
+  display: inline-block;
+}
+
 .card-container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
   border: 2px solid black;
-  width: 850px;
-  margin: 0 auto;
-  overflow: scroll;
   max-height: 600px;
+  overflow: scroll;
   padding: 20px;
   margin-bottom: 40px;
 }
@@ -45,7 +52,7 @@ body{
 .image-wrapper img{
   width: 100%;
   height: 100%;
-
+  
 }
 
 .text-wrapper p{
@@ -61,3 +68,4 @@ body{
 .card i:hover{
   cursor: pointer;
 }
+

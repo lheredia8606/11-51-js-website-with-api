@@ -6,6 +6,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="./CSS/style.css">
   <script src="https://kit.fontawesome.com/dfb1cf6423.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-WP7l9j/OO9RQ0TlaVyfHd+YFDq56VWwjjpv1uo3UIJKzI7IHKQ5tM8L1Rcgy6hsdF5cK3JH8pNq+L/6x8BBtFg==" crossorigin="anonymous" />
+
 </head>
 <body>
   <h1>News from the NASA</h1>
@@ -13,16 +15,27 @@
     <div class="main-container">
       <div>
         <h2>Regular news</h2>
+        <div class="btn-container unfav">
+          <span>Sort</span>
+          <button class="asc" data-container="unFav" data-direction="asc">A <i class="fa-solid fa-arrow-right"></i> Z</button>
+          <button class="des" data-container="unFav" data-direction="desc">Z <i class="fa-solid fa-arrow-right"></i> A</button>
+        </div>
         <div class="card-container unFav">
         </div>
       </div>
       <div>
         <h2>Favorites News</h2>
+        <div class="btn-container fav">
+          <span>Sort</span>
+          <button class="asc" data-container="fav" data-direction="asc">A <i class="fa-solid fa-arrow-right"></i> Z</button>
+          <button class="des" data-container="fav" data-direction="desc">Z <i class="fa-solid fa-arrow-right"></i> A</button>
+        </div>
         <div class="card-container fav">
         </div>
       </div>
     </div>
   </section>
+  <script src="./JS/sort.js"></script>
   <script src="./JS/scrip.js"></script>
 </body>
 </html>
