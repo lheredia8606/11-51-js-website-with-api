@@ -14,78 +14,82 @@
     <div class="main-container">
       <div>
         <h2>Regular news</h2>
-        <div class="functionality-container">
-          <div class="btn-container unfav">
-            <span>Sort</span>
-            <button class="asc" data-container="unFav" data-direction="asc">A <i class="fa-solid fa-arrow-right"></i> Z</button>
-            <button class="des" data-container="unFav" data-direction="desc">Z <i class="fa-solid fa-arrow-right"></i> A</button>
-          </div>
-          <table>
-            <th>
+        <div class="functionality-container-wrapper">
+          <div class="functionality-container">
+            <div class="btn-container unfav">
+              <span>Sort</span>
+              <button class="asc" data-container="unFav" data-direction="asc">A <i class="fa-solid fa-arrow-right"></i> Z</button>
+              <button class="des" data-container="unFav" data-direction="desc">Z <i class="fa-solid fa-arrow-right"></i> A</button>
+            </div>
+            <table>
+              <th>
+                <tr>
+                  <td colspan="2">
+                    <h2>
+                      Quantity of news per site
+                    </h2>
+                  </td>
+                </tr>
+              </th>
               <tr>
-                <td colspan="2">
-                  <h2>
-                    Quantity of news per site
-                  </h2>
+                <td>
+                  <label for="">Select Site:</label>
+                </td>
+                <td>
+                  <label for="">Quantity:</label>
                 </td>
               </tr>
-            </th>
-            <tr>
-              <td>
-                <label for="">Select Site:</label>
-              </td>
-              <td>
-                <label for="">Quantity:</label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <select class="select-unFav" name="Sites" id="selectSiteUnFav"></select>
-              </td>
-              <td>
-                <input type="text" class="input-unFav" readonly>
-              </td>
-            </tr>
-          </table>
+              <tr>
+                <td>
+                  <select class="select-unFav" name="Sites" id="selectSiteUnFav"></select>
+                </td>
+                <td>
+                  <input type="text" class="input-unFav" readonly>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
         <div class="card-container unFav">
         </div>
       </div>
       <div>
         <h2>Favorites News</h2>
-        <div class="functionality-container">
-          <div class="btn-container fav">
-            <span>Sort</span>
-            <button class="asc" data-container="fav" data-direction="asc">A <i class="fa-solid fa-arrow-right"></i> Z</button>
-            <button class="des" data-container="fav" data-direction="desc">Z <i class="fa-solid fa-arrow-right"></i> A</button>
-          </div>
-          <table>
-            <th>
+        <div class="functionality-container-wrapper">
+          <div class="functionality-container">
+            <div class="btn-container fav">
+              <span>Sort</span>
+              <button class="asc" data-container="fav" data-direction="asc">A <i class="fa-solid fa-arrow-right"></i> Z</button>
+              <button class="des" data-container="fav" data-direction="desc">Z <i class="fa-solid fa-arrow-right"></i> A</button>
+            </div>
+            <table>
+              <th>
+                <tr>
+                  <td colspan="2">
+                    <h2>
+                      Quantity of news per site
+                    </h2>
+                  </td>
+                </tr>
+              </th>
               <tr>
-                <td colspan="2">
-                  <h2>
-                    Quantity of news per site
-                  </h2>
+                <td>
+                  <label for="">Select Site:</label>
+                </td>
+                <td>
+                  <label for="">Quantity:</label>
                 </td>
               </tr>
-            </th>
-            <tr>
-              <td>
-                <label for="">Select Site:</label>
-              </td>
-              <td>
-                <label for="">Quantity:</label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <select class="select-fav" name="Sites" id="selectSiteFav"></select>
-              </td>
-              <td>
-                <input type="text" class="input-fav" readonly>
-              </td>
-            </tr>
-          </table>
+              <tr>
+                <td>
+                  <select class="select-fav" name="Sites" id="selectSiteFav"></select>
+                </td>
+                <td>
+                  <input type="text" class="input-fav" readonly>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
         <div class="card-container fav">
         </div>
